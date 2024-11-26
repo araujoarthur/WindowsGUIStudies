@@ -44,7 +44,7 @@ int WINAPI wWinMain(
 
 	// 3. Creating a new instance of a window:
 	HWND hwnd = CreateWindowEx(
-		0, // Optional. Window Styles.
+		WS_EX_COMPOSITED, // Optional. Window Styles.
 		L"Sample Window Class", // Window Class. (same as defined in lpszClassName).
 		L"Sample Window Title", // Window Text
 		WS_OVERLAPPEDWINDOW, // Window Style
